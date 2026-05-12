@@ -1,7 +1,7 @@
 const translations = {
     vi: {
-        title: "Made For Anita 🎁",
-        description: "Một món quà đầy yêu thương đang chờ bạn khám phá! Nhấn để xem lời chúc đặc biệt!",
+        title: "Special Gift For Nurazwinda 🎁",
+        description: "Ada kejutan yang istimewa untuk sayang! Klik link untuk tengok sekarang. ",
         login: "Đăng nhập bằng Google",
         logout: "Đăng xuất",
         settings: "Cài Đặt Trang Web",
@@ -10,11 +10,11 @@ const translations = {
         countdown: "Cài Đặt Thời Gian",
         countdownTime: "Thời Gian Đếm Ngược:",
         matrix: "Cài Đặt Hiệu Ứng Mưa Chữ",
-        matrixText: "chữ chính mưa chữ:",
+        matrixText: "HAPPY BIRTHDAY CINTA HATIKU NURAZWINDA!!!!!",
         matrixColor1: "Màu mưa chữ 1:",
         matrixColor2: "Màu mưa chữ 2:",
         sequence: "Cài Đặt chữ chính",
-        sequenceText: "Nội Dung chữ chính:",
+        sequenceText: "HAPPY|BIRTHDAY|MY|CUTE|LITTLE|NURAZWINDA",
         sequenceColor: "Màu chữ chính:",
         gift: "Cài Đặt Hình Động",
         giftImage: "Hình Động (tùy chọn):",
@@ -47,7 +47,7 @@ const translations = {
         copyLink: "📋 Copy Link",
         viewWebsite: "🔗 Xem Website",
         close: "✖ Đóng",
-        createSuccess: "🎉 Tạo website thành công!",
+        createSuccess: "🎉 Surprise ni dah ready untuk Sayang!!! heheheh",
         price: "Giá:",
         shareLink: "Link chia sẻ:",
         copySuccess: "Đã copy link sản phẩm!",
@@ -67,7 +67,7 @@ const translations = {
         cannotPay: "Lỗi xử lý thanh toán: ",
         paymentRedirect: "🔄 Đang chuyển đến trang thanh toán...",
         free: "MIỄN PHÍ",
-        thanks: "Cảm ơn bạn rất nhiều! Nếu thích sản phẩm này, hãy follow kênh TikTok <b>tớ là Toán</b> để mình có động lực ra nhiều sản phẩm hơn nhé!",
+        thanks: "Selamat Hari Jadi diucapkan kepada Sayang abang,Nurazwinda! Semoga gapai segala cita-cita dan jadi anak serta isteri yang solehah. I love you to the moon and back 🫶❤️ ",
         tiktokBtn: "🥰 xem kênh TikTok",
         heartQr: "❤️ Tạo QR trái tim",
         heartQrCopy: "✅ Đã copy link QR trái tim!",
@@ -319,11 +319,11 @@ function switchLanguage() {
     }
 }
 
-// Khởi tạo ngôn ngữ khi load trang
+// tukar bahasa
 document.addEventListener('DOMContentLoaded', () => {
-    const lang = localStorage.getItem('lang') || 'vi';
+    const lang = 'en'; // Kita paksa dia guna English/bahasa yang kau dah edit tadi
+    localStorage.setItem('lang', 'en'); 
     setLanguage(lang);
-    // Gắn sự kiện cho nút chuyển ngôn ngữ
     document.getElementById('langSwitchBtn').onclick = switchLanguage;
 });
 
